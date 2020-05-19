@@ -1,0 +1,95 @@
+dev img{
+    height: 720px;
+    
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: gray;
+    /*centralizando as margins 20 (cima x baixo) 0 (esquerda x direita)*/
+    padding: 20px 0;
+}
+
+.caixa{
+    position: relative;
+    width: 940px;
+    /*centralizando as margins 0 (cima x baixo) auto (esquerda x direita)*/
+    margin: 0 auto;
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+ 
+}
+nav li{
+    /*Se comportando em linha não mas em bloco, fazendo a lista alinhada*/
+    display: inline;
+
+    /*espaçamento do bloco li*/
+    margin-right: 15px;
+}
+
+nav a{
+    /*Transformando o conteudo do texto de a em UPPERCASE*/
+    text-transform: uppercase;
+
+    font-weight: bold; /*o peso da fonte e negrito (bold)*/
+    font-size: 22px;
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover{
+    color:#B0473B;
+    text-decoration: underline;
+}
+
+.home{
+    background-image: url("imagens/home-imagem.jpg");
+    height: 100vh;
+    text-align: center;
+    
+}
+
+.home h2{
+   transition: 1s transform;
+}
+
+.home h2:hover{
+    transform: scale(1.2);
+}
+
+.home .conteudo{
+    color: white;
+    font-size: 20px;
+    
+}
+
+.home p{
+    margin-top: 20px;
+}
+
+footer{
+    text-align: center;
+    
+    padding: 40px 0;
+    /*
+        background-color: gray;
+
+        Vamos mudar um pouco
+        Ao invez da cor ser o backgrond e a imagem um elemento no HTML
+        Vamos colocar uma imagem como backgrond
+    */
+    background: url("imagens/bg.jpg");
+}

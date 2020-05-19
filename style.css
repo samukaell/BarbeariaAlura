@@ -1,0 +1,211 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: gray;
+    /*centralizando as margins 20 (cima x baixo) 0 (esquerda x direita)*/
+    padding: 20px 0;
+}
+
+.caixa{
+    position: relative;
+    width: 940px;
+    /*centralizando as margins 0 (cima x baixo) auto (esquerda x direita)*/
+    margin: 0 auto;
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+ 
+}
+nav li{
+    /*Se comportando em linha não mas em bloco, fazendo a lista alinhada*/
+    display: inline;
+
+    /*espaçamento do bloco li*/
+    margin-right: 15px;
+}
+
+nav a{
+    /*Transformando o conteudo do texto de a em UPPERCASE*/
+    text-transform: uppercase;
+
+    font-weight: bold; /*o peso da fonte e negrito (bold)*/
+    font-size: 22px;
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover{
+    color:#B0473B;
+    text-decoration: underline;
+}
+
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    /*dando um espaço entre a estrutura de cima de o ul
+        espacamento interno = padding
+    */
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.produtos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto-descrisao{
+    font-size: 18px;
+}
+
+.produto-preco{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.produtos li{
+    display: inline-block;
+    /*Alinhamento inline-block e por padrao por baixo, mudar para cima (top)*/
+    vertical-align: top;
+    /*centralizando o texto dentro do li*/
+    text-align: center;
+    
+    /*Dando o espaçamento de 100% do ul 30% para cada li*/
+    width: 30%;
+
+    
+    margin: 0 1.5%;
+
+    /*Para dar aumentar o espaçamento do li porem dentro das margens do 30%*/
+    padding: 30px 20px;
+    box-sizing: border-box;
+
+
+    /*Borda*/
+    border-color: black;
+    border-width: 2px;
+    border-radius: 10px;
+    border-style: solid;
+
+    
+    /*Ou simplificando
+        border: 2px solid black;    
+    */
+}
+
+.produtos li:hover{
+    border-color: #B0473B;
+}
+
+/*Alterar um outro elemento (dentro dele ) qdo algo acontece a ele*/
+.produtos li:hover h2{
+    font-size: 34px;
+}
+
+.produtos li:active {
+    color: #B0473B;
+}
+
+footer{
+    text-align: center;
+    
+    padding: 40px 0;
+    /*
+        background-color: gray;
+
+        Vamos mudar um pouco
+        Ao invez da cor ser o backgrond e a imagem um elemento no HTML
+        Vamos colocar uma imagem como backgrond
+    */
+    background: url("imagens/bg.jpg");
+}
+
+.copyright{
+    color: white;
+    font-size: 13px;
+    margin-top: 20px;
+    
+}
+
+main{
+    width: 940px;
+    margin: 0 auto;
+}
+
+form{
+    margin: 40px 0;
+}
+
+form label , form legend{
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.inputPadrao{
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+
+
+.enviar{
+    margin: 20px 0;
+    width: 40%; 
+    padding: 15px 0;
+    border: none;
+    border-radius: 5px;
+    background: #B0473B;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+
+    cursor: pointer;
+    /*Sempre que o curso (mouse) estiver em cima do elemento mude para o pointer*/
+
+    transition: 1s background,1s transform;
+    /*A transição de cor do fundo do botão demora um segundo de uma cor a outra*/
+}
+
+.enviar:hover {
+    background: black;
+    transform: scale(1.2);
+}
+
+table {
+    margin: 20px 0 40px;
+
+}
+
+thead {
+    background-color: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td,th {
+    border: 1px solid black;
+    padding: 8px 15px;
+    transition: 1s all  ;
+}
+
+td:hover {
+    transform: scale(1.2);
+    background-color: black;
+    color: white;
+}
+
+
+

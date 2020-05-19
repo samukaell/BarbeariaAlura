@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conatos - Barbearia Alura</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    
+
+</head>
+<body>
+    <!--
+        A tag h1 e a principal informação do inicio da pagina, mesmo não se tratando texto h1 carrega
+        a importancia a imagem 
+    -->
+    <header>
+        <div class="caixa">
+            <h1>
+                <img src="imagens/logo.png" alt="Logo da Barbearia Alura">
+                <!--Alt serve para a descrição da imagem caso aja algum problema no carregamento
+                sendo alt uma alternativa para a imagem-->
+            </h1>
+            
+            <!--Menu da pagina-->
+            <nav>
+                <ul>
+                    <!--
+                        Utilizando ancor (tag <a>) adiciona-se um link para linkar o item da lista (menu) ao acesso a
+                        outra pagina
+                    -->
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="contatos.html">Contatos</a></li>
+
+                </ul>
+            </nav> 
+        </div>    
+    </header>
+
+    <main>
+        <!--Mais uma tag definida tipo form para formulario-->
+        <form >
+            <!--Campo informações do usuario-->
+            <label for="nomeSobrenome">Nome e sobrenome</label>
+            <input type="text" id="nomeSobrenome" class="inputPadrao" placeholder="Samuel Alcântara" required>
+
+            <label for="email">Email</label>
+            <input type="emial" id="email" class="inputPadrao" placeholder="alura@emil.com" required>
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" class="inputPadrao" placeholder="(DD) 98765-4321" required>
+
+            <!--Campo de mensagem-->
+            <label for="mensagem">Mensagem</label>
+            <!-- atravez de cols e rows (colunas e linhas) podesse defenir uma dimenção "tamanho" para o textarea-->
+            <textarea id="mensagem" cols="70" rows="10" class="inputPadrao" placeholder="Eu sou careca" required></textarea>
+
+            <!--Campo ds radios-->
+
+            <fieldset>
+                <legend>Como prefere nosso contato</legend>
+                <label for="radioEmail"><input id="radioEmail" type="radio" name="contato" value="email">Email</label>
+                
+
+                <label for="radioTelfone"><input id="radioTelefone" type="radio" name="contato" value="telefone">Telefone</label>
+                
+
+                <label for="radioWhatsapp"><input id="radioWhatsapp" type="radio" name="contato" value="whatsapp" checked>Whatsapp</label>
+            </fieldset>
+
+            <!--checked deixa a opção  ja marcada-->
+
+            <!--Campo do checkbox-->
+            <label class="checkbox"><input type="checkbox" checked></input> Gostaria de receber nossas novidades por email?</label>
+            <!--checked deixa a opção  ja marcada-->
+
+
+            <!--Campo do seletor-->
+            <fieldset>
+                <legend>Qual horario prefere ser atendido?</legends>
+                <select >
+                    <option >Manhã</option>
+                    <option >Tarde</option>
+                    <option >Noite</option>
+                </select>
+            </fieldset>
+
+            <!--
+                Para enviar essas informações para serem tratadas 
+                em outras areas do codigo e necessario outro input
+            -->
+
+            <!--Campo do buton-->
+            <div >
+                <input type="submit" value="Enviar formulário" class="enviar">
+            </div>
+        </form>
+
+        <table>
+            <!--Tr - linhas Td - colunas-->
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Horário</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Segunda</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+
+                <tr>
+                    <td>Quarta</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+
+                <tr>
+                    <td>Sexta</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <img src="imagens/logo-branco.png" alt="Logo da Barbearia Alura" >
+        <p class="copyright">&copy; Copyright Barbearia Alura - 2019</p>
+    </footer>
+
+</body>
+</html>
